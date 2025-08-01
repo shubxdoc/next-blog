@@ -5,9 +5,9 @@ A simple blog platform with a rich-text editor, image upload, and database stora
 ## ⚙️ Setup
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone
+cd next-blog
 pnpm install
-npx prisma generate
+pnpm exec prisma generate
 pnpm dev
 ```

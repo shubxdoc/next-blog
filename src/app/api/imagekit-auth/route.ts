@@ -7,10 +7,7 @@ export async function GET() {
     const { userId } = await auth();
 
     if (!userId) {
-      return {
-        success: false,
-        message: "Unauthorized",
-      };
+      return NextResponse.json({ success: false, message: "Unauthorized" });
     }
 
     const { token, expire, signature } = getUploadAuthParams({
